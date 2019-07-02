@@ -112,7 +112,7 @@ This is an online event. We will meet using the online videoconference software 
 
 {% else %}
 {% assign inperson = "true" %}
-{{ loc.address }} {% if loc.latlng %} Get directions with
+{{ loc.address }} {% if loc.latlng %} Get directions with <a href="https://www.myatlascms.com/map/?id=61&mrkIid=48220">Macquarie University's Map</a>, 
     <a href="//www.openstreetmap.org/?mlat={{loc.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
     or
     <a href="//maps.google.com/maps?q={{loc.latlng}}">Google Maps</a>. {% endif %}
